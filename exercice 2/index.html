@@ -5,8 +5,14 @@
   <title>Exercice 2</title>
 </head>
 <body>
-  <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+  <form onsubmit="Valid()">
+    <label for="nom">Votre nom  : </label><input onblur=alert(event.srcElement.name) type="text" name="nom" value="" id="nom"/>
   </form>
+      <script>
+          function Valid(){
+          var nom = document.getElementById('nom');
+            alert('merci de votre participation');
+          };
+      </script>
 </body>
 </html>
